@@ -22,7 +22,7 @@ class UsersController < ApplicationController
       @user = User.new(allowed_params)
 
       if @user.save
-        redirect_to root_path
+        redirect_to dashboard_path
       else
         render :new
       end

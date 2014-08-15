@@ -54,13 +54,9 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-    root "psts#index"
-    get "/home" => "user#home"
-    resource :users do
-      resource :psts
-    end
+    root "users#index"
+    get "/dashboard" => "psts#new", :as => :user
+    resource :users
+    resource :psts
 
-
-
-3
 end

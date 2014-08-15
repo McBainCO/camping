@@ -11,7 +11,8 @@ class PstsController < ApplicationController
 
   def new #display form for new record
     #will have template
-    @pst = Psts.new
+
+    @pst = Pst.new
   end
 
   def create #save new record
