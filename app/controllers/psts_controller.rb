@@ -17,10 +17,9 @@ class PstsController < ApplicationController
 
   def create #save new record
     #will save and redirect
-    @pst = Psts.new(allowed_params)
-
+    @pst = Pst.new
     if @pst.save
-      redirect_to home_path
+      redirect_to dashboard_path
     else
       render :new
     end
@@ -38,10 +37,6 @@ class PstsController < ApplicationController
     #do logic and redirect
   end
 
-  private
-  def allowed_params
-    params.require(:pst).permit(:content, :link)
-  end
 
 end
 

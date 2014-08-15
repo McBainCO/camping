@@ -55,7 +55,7 @@ Rails.application.routes.draw do
   #   end
 
     root "users#index"
-    get "/dashboard" => "psts#new", :as => :user
+    get "/dashboard" => "psts#new"
     resource :users
     resource :psts
 
