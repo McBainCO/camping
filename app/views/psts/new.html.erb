@@ -1,14 +1,16 @@
 <%= form_for @pst do |u| %>
 
+
   <p>
-    <%= u.label :content %>
-    <%= u.text_field :content %>
+    <%= u.label :headline %>
+    <%= u.text_field :headline %>
   </p>
 
   <p>
-    <%= u.label :link %>
-    <%= u.text_field :link %>
+    <%=	 u.label :content %>
+    <%=	 u.text_field :content %>
   </p>
+
 
   <p>
     <%= u.submit %>
