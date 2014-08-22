@@ -1,0 +1,9 @@
+<h3 class="logout"><%= link_to "Logout", root_path %></h3>
+<ul>
+<% @psts.each do |p| %>
+  <li class='post_list'>
+   <p> <%= p.headline %> </p>
+  </li>
+
+  <% end %>
+</ul>
