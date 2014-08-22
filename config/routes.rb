@@ -58,6 +58,6 @@ Rails.application.routes.draw do
     root "users#index"
     get "/dashboard" => "psts#new"
     resource :users
-    resource :psts
+    resources :psts
 
 end

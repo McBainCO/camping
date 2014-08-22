@@ -13,4 +13,15 @@ feature "psts" do
     #click button "create post"
     #look to see if new post is shown
   end
+
+  scenario "user clicking the post link takes user to that posts unique url" do
+    #creates two unique posts""
+    #click button "create post"
+    #user clicks link below headline
+    #user sees only the content of the post that he clicked
+    #ensure current path is "post path"
+  end
+
+
+
 end

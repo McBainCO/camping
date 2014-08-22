@@ -3,6 +3,7 @@
 <% @psts.each do |p| %>
   <li class='post_list'>
    <p> <%= p.headline %> </p>
+    <p><%= link_to "Self Desructing content here", pst_path(p) %></p>
   </li>
 
   <% end %>
