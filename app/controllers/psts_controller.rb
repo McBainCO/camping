@@ -8,6 +8,7 @@ class PstsController < ApplicationController
   def show
     #will have template
     @pst = Pst.find(params[:id])
+
   end
 
   def new #display form for new record
