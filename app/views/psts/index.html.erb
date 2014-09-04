@@ -1,9 +1,11 @@
 <h3 class="logout"><%= link_to "Logout", root_path %></h3>
+<h2 class="logout"><%= link_to "Create another Post", new_pst_path %></h2>
 <ul>
 <% @psts.each do |p| %>
   <li class='post_list'>
    <p> <%= p.headline %> </p>
     <p><%= link_to "Self Desructing content here", pst_path(p) %></p>
+    <P><%= link_to "Delete", "/psts/#{p.id}", method: :delete %>  </P>
   </li>
 
   <% end %>

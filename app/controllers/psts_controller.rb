@@ -36,6 +36,10 @@ class PstsController < ApplicationController
 
   def destroy #deletes our action
     #do logic and redirect
+     #if pst timestamp is older than 24hrs
+    @pst = Pst.find(params[:id])
+    @pst.destroy
+    redirect_to "/home"
   end
 
   private

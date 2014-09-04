@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140820194134) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "psts", force: true do |t|
     t.string   "content"
     t.datetime "created_at"
