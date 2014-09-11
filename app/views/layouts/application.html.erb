@@ -7,11 +7,18 @@
   <%=	 csrf_meta_tag %>
 </head>
 <body>
-  <h1>Disappearing Link</h1>
+<header>
+  <h1 style="color: #BD68AA;">Dissapearing Link</h1>
+  <h3><%= link_to "Logout", root_path %></h3>
+
+</header>
+
+
 <div class="wrapper">
 <%= yield %>
-</div>
 
+</div>
+<div class="ground"></div>
 
 </body>
 </html>

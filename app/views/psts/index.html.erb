@@ -2,11 +2,11 @@
 <h2><%= link_to "Create another Post", new_pst_path %></h2>
 <ul>
 <% @psts.each do |p| %>
-  class='post_list'
+    <li>
    <%= p.headline %>
     <%= link_to "Self Desructing content here", pst_path(p) %>
     <%= link_to "Delete", "/psts/#{p.id}", method: :delete %>
-
+    </li>
 
   <% end %>
 </ul>

@@ -30,6 +30,7 @@ group :development, :test do
   gem 'capybara'
   gem 'pg'
   gem 'shareable'
+  gem 'normalize-rails'
 end
 
 
