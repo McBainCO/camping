@@ -12,12 +12,13 @@
  *
  *= require_tree .
  *= require_self
-
  */
 
-.wrapper {
-  background: #ff34ff;
-}
+@import 'share/global';
+
+
+
+
 
 //@media (min-width: 768px)
 //.wrapper {
@@ -29,18 +30,20 @@
 //  width: 970px;
 //}
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-.clearfix { display: inline-block; }
-/* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
-/* close commented backslash hack */
-
-
+//
+//
+//.clearfix:after {
+//  visibility: hidden;
+//  display: block;
+//  font-size: 0;
+//  content: " ";
+//  clear: both;
+//  height: 0;
+//}
+//.clearfix { display: inline-block; }
+///* start commented backslash hack \*/
+//* html .clearfix { height: 1%; }
+//.clearfix { display: block; }
+///* close commented backslash hack */
+//
+//
