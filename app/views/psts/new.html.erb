@@ -1,9 +1,9 @@
-<h3 class="logout"><%= link_to "Logout", root_path %></h3>
+<h3><%= link_to "Logout", root_path %></h3>
 
-<%= form_for @pst do |u| %>
+<p><%= form_for @pst do |u| %></p>
 
 
-  <p>
+    <p>
     <%= u.label :headline %>
     <%= u.text_field :headline %>
   </p>

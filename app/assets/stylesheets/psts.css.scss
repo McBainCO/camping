@@ -1,12 +1,19 @@
 // Place all the styles related to the psts controller here.
 // They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.logout {
-  float: right;
-  margin-right: 2%;
-  margin-top: -80px;
-}
 
-.post_list {
-  list-style-type: none;
+
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
