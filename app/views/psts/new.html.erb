@@ -21,6 +21,11 @@
   </p>
 
 <% end %>
+  <% if @pst.errors.any? %>
+    <% @pst.errors.each do |message| %>
+      <p><%= message %> field cannot be empty </p>
+    <% end %>
+  <% end %>
 
 
 

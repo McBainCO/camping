@@ -1,19 +1,23 @@
-
-
 <%= form_for @user do |u| %>
 
-  <p>
-    <%= u.label :name %>
-    <%= u.text_field :name %>
-  </p>
+    <p>
+      <%= u.label :name %>
+      <%= u.text_field :name %>
+    </p>
 
-  <p>
-    <%= u.label :email %>
-    <%= u.text_field :email %>
-  </p>
+    <p>
+      <%= u.label :email %>
+      <%= u.text_field :email %>
+    </p>
 
-  <p>
-  <%= u.submit %>
-  </p>
+    <p>
+      <%= u.submit %>
+    </p>
 
+  <% end %>
+
+<% if @user.errors.any? %>
+  <% @user.errors.each do |message| %>
+    <p><%= message %> field cannot be empty </p>
+  <% end %>
 <% end %>

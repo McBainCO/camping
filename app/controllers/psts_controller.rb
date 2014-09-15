@@ -48,5 +48,6 @@ class PstsController < ApplicationController
     params.require(:pst).permit(:headline, :content)
   end
 
+
 end
 
