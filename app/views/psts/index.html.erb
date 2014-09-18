@@ -1,6 +1,5 @@
-<h3><%= link_to "Logout", root_path %></h3>
 <h2><%= link_to "Create another Post", new_pst_path %></h2>
-<ul>
+<ul style="list-style-type: none;">
 <% @psts.each do |p| %>
     <li>
    <%= p.headline %>
