@@ -59,5 +59,5 @@ Rails.application.routes.draw do
     get "/dashboard" => "psts#new"
     resource :users
     resources :psts
-
+    resources :sessions, :only => [:new, :create, :destroy]
 end
