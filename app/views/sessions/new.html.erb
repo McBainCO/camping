@@ -1,13 +1,15 @@
 <%= form_for @user, url: sessions_path, method: :post do |f| %>
-  <ul>
+  <ul style="list-style-type: none;">
     <li>
       <%= f.label :name %>
-      <%= f.email_field :name %>
+      <%= f.text_field :name %>
     </li>
+    <br/>
     <li>
       <%= f.label :email %>
       <%= f.email_field :email%>
     </li>
+    <br/>
     <%= f.submit "Sign in" %>
   </ul>
 
