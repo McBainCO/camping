@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   end
 
   def show
-      #will have template
+
   end
 
   def new #display form for new record

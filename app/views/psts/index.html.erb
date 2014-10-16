@@ -3,7 +3,8 @@
 <% @psts.each do |p| %>
     <li>
    <%= p.headline %>
-    <%= link_to "Self Desructing content here", pst_path(p) %>
+    <br/>
+      <%= link_to "See and share this post", pst_path(p) %>
     <%= link_to "Delete", "/psts/#{p.id}", method: :delete %>
     </li>
 
