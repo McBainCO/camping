@@ -32,6 +32,7 @@ group :development, :test, :production do
   gem 'shareable'
   gem 'normalize-rails'
   gem 'rails_12factor'
+  gem 'whenever', :require => false
 end
 
 
